@@ -10,6 +10,7 @@ import CanvasLoader from "../components/Loading";
 import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
 import Cube from "../components/Cube";
+import Rings from "../components/Rings";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -41,6 +42,7 @@ const Hero = () => {
             <group>
               <Target position={sizes.targetPosition} />
               <ReactLogo position={sizes.reactLogoPosition} />
+              <Rings position={sizes.ringPosition} />
               <Cube position={sizes.cubePosition} />
             </group>
             <Leva hidden />

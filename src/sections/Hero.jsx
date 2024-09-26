@@ -9,6 +9,7 @@ import { HackerRoom } from "../components/HackerRoom";
 import CanvasLoader from "../components/Loading";
 import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
+import Cube from "../components/Cube";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -40,6 +41,7 @@ const Hero = () => {
             <group>
               <Target position={sizes.targetPosition} />
               <ReactLogo position={sizes.reactLogoPosition} />
+              <Cube position={sizes.cubePosition} />
             </group>
             <Leva hidden />
             <ambientLight intensity={1} />

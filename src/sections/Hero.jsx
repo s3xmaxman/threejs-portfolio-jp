@@ -8,6 +8,7 @@ import { calculateSizes } from "../constants";
 import { HackerRoom } from "../components/HackerRoom";
 import CanvasLoader from "../components/Loading";
 import Target from "../components/Target";
+import ReactLogo from "../components/ReactLogo";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -38,6 +39,7 @@ const Hero = () => {
             />
             <group>
               <Target position={sizes.targetPosition} />
+              <ReactLogo position={sizes.reactLogoPosition} />
             </group>
             <Leva hidden />
             <ambientLight intensity={1} />

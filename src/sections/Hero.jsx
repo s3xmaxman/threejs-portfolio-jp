@@ -7,6 +7,7 @@ import { PerspectiveCamera } from "@react-three/drei";
 import { calculateSizes } from "../constants";
 import { HackerRoom } from "../components/HackerRoom";
 import CanvasLoader from "../components/Loading";
+import Target from "../components/Target";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -35,6 +36,9 @@ const Hero = () => {
               position={sizes.deskPosition}
               rotation={[0.1, -Math.PI, 0]}
             />
+            <group>
+              <Target position={sizes.targetPosition} />
+            </group>
             <Leva hidden />
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />

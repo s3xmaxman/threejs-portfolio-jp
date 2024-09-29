@@ -55,14 +55,13 @@ const Contact = () => {
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <img
           src="/assets/terminal.png"
-          alt="terminal-bg"
+          alt="ターミナル背景"
           className="absolute inset-0 min-h-screen"
         />
         <div className="contact-container">
-          <h3 className="head-text">Let&#39;s talk</h3>
+          <h3 className="head-text">お問い合わせ</h3>
           <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing
-            platform, or bring a unique project to life, I’m here to help.
+            新規ウェブサイトの構築、既存プラットフォームの改善、または独自のプロジェクトの実現など、お気軽にご相談ください。お手伝いさせていただきます。
           </p>
 
           <form
@@ -71,7 +70,7 @@ const Contact = () => {
             className="mt-12 flex flex-col space-y-7"
           >
             <label className="space-y-3">
-              <span className="field-label">Full Name</span>
+              <span className="field-label">氏名</span>
               <input
                 type="text"
                 name="name"
@@ -79,12 +78,12 @@ const Contact = () => {
                 className="field-input"
                 onChange={handleChange}
                 required
-                placeholder="Enter your name"
+                placeholder="氏名を入力してください"
               />
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Email</span>
+              <span className="field-label">メールアドレス</span>
               <input
                 type="email"
                 name="email"
@@ -92,27 +91,27 @@ const Contact = () => {
                 className="field-input"
                 onChange={handleChange}
                 required
-                placeholder="Enter your email"
+                placeholder="メールアドレスを入力してください"
               />
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Message</span>
+              <span className="field-label">メッセージ</span>
               <textarea
                 name="message"
                 value={form.message}
                 className="field-input"
                 onChange={handleChange}
                 required
-                placeholder="Enter your message"
+                placeholder="メッセージを入力してください"
               />
             </label>
 
             <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? "送信中..." : "メッセージを送信"}
               <img
                 src="/assets/arrow-up.png"
-                alt="arrow-up"
+                alt="送信ボタン矢印"
                 className="field-btn_arrow"
               />
             </button>
